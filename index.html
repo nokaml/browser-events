@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Браузерные события</title>
+</head>
+<body onload="alert('Событие загрузки DOM');">
+    <button onclick="alert('Событие клика!');">Нажми меня!</button>
+    <div onmouseover="alert('Событие наведения!');" class="mouseover">наведи на меня мышь!</div>
+    <div onmouseout="alert('Событие отведения!');" class="mouseout">отведи с меня мышь!</div>
+    <div onmousemove="alert('Событие движения мыши!');" class="mousemove">поводи на мне мышкой!</div>
+    <p>Нажми клавишу!</p>
+        <input onkeydown="alert('Событие нажатия клавиши');" type="text">
+    <p>Отожми клавишу!</p>
+        <input onkeyup="alert('Событие отжатия клавиши');" type="text">
+    <form onsubmit="alert('Событие отправки формы!');">
+        <p>Я форма</p>
+        <button type="submit">Нажми меня!</button>
+        <p>Сфокусируся на мне!</p>
+        <input onfocus="alert('Событие фокуса');" type="text">
+    </form>
+</body>
+</html>
